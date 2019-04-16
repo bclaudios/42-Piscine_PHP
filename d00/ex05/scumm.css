@@ -1,0 +1,106 @@
+html, body  {
+    background-color:#313131;
+    height: 100%;
+}
+
+.container  {
+    margin: 0 auto;
+    width: 75.28vw;
+}
+
+header  {
+    margin-top: 1vw;
+    padding: 0.54vw;
+    background-color: #909090;
+    height: 7.25vw;
+    border-radius: 0.5vw;
+    box-shadow: 15px 15px 10px black;
+}
+
+#mainLogo  {
+    height: 100%;
+}
+
+#glassLogo  {
+    position: absolute;
+    height: 9vw;
+    left: 71%;
+}
+
+#iconContainer  {
+    float:right;
+    display: inline-block;
+    position: relative;
+    height: 100%;
+    width: 1.5%;
+}
+
+#restartLink   {
+    width: 100%;
+}
+#restartLogo   {
+    width: 100%;
+}
+#menuLink   {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+#menuLogo   {
+    width: 100%;
+}
+
+main    {
+    display: flex;
+    margin-top: 1vw;
+    height: 31vw;
+}
+
+.sideContainer  {
+    height: 65%;
+    width: 8.5%;
+    
+    background-color: #909090;
+    border-radius: 0.5vw;
+    box-shadow: 15px 15px 10px black;
+
+    margin: 0 auto;
+    padding: 1.5% 0.75%;
+    text-align: center;
+}
+
+#viewContainer  {
+    padding: 0.54vw;
+    background-image:url("img/background_menu.jpg");
+    background-repeat: no-repeat;
+    background-size:100%;
+    width:70%;
+    border-radius: 0.5vw;
+    box-shadow: 15px 15px 10px black;
+}
+
+/* ======================================================= */
+
+#title {
+    font-size:4vw;
+    color: #19bdf0;
+    text-align: center;
+    text-shadow: #0e65b4 0px 0px 40px;
+}
+
+.buttonMenu {
+    display: block;
+    text-align:center;
+    font-size: 2.5vw;
+    color: #19bdf0;
+    text-align: center;
+    text-shadow: #0e65b4 0px 0px 40px;
+    text-decoration: none;
+    vertical-align: middle;
+	margin-top: 10%;
+	border: solid black 3px;
+}
+
+.buttonMenu:hover {
+	background-color: black;
+}

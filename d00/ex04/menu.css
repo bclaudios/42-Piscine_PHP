@@ -1,0 +1,68 @@
+html, body {
+    margin:0;
+    padding:0;
+    background-color: antiquewhite;
+}
+
+.container {
+    width: 80vw;
+    margin: 0 auto;
+}
+
+ul {
+    list-style-type: none;
+    margin:0;
+    padding: 0;
+}
+
+.categories {
+    float: left;
+	margin: 0;
+	padding: 5px 0;
+    display: inline-block;
+    width: 14.28%;
+    text-align: center;
+    border-width: 2px;
+    border-color: black;
+    border-style: solid;
+	box-sizing: border-box;
+	border-radius:6px;
+	background-color:rgb(85, 85, 85);
+}
+
+.categories:hover > .submenu {
+    display: inline-block;
+}
+
+.submenu {
+    display: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    border-width: 2px 0 0 0;
+    border-style: solid;
+}
+
+.items {
+    background-color:lightslategray;
+    border-width: 2px 0 0 0;
+    border-style: solid;
+    margin:0;
+    background-color: inherit;
+    padding: 10%;
+}
+
+a {
+    margin:0;
+    text-decoration: none;
+    color: white;
+}
+
+.pink {border-color: #EC77A3; color: #EC77A3;}
+.orange {border-color: #ECBE59; color: #ECBE59;}
+.yellow {border-color: #DEE955; color: #DEE955;}
+.purple {border-color: #C686CC; color: #C686CC;}
+.red {border-color: #FD8572; color: #FD8572;}
+.green {border-color: #52EE61; color: #52EE61;}
+.blue {border-color: #759FFF; color: #759FFF;}
+.grey {border-color: #CCCCCC; color: #CCCCCC;}

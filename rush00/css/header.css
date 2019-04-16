@@ -1,0 +1,43 @@
+header  {
+    background-color: antiquewhite;
+    height: 80px;
+	padding: 10px;
+	margin-bottom: 40px;
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    border: 2px solid  #1f1d1b;
+}
+
+header div  {
+    height: 100%;
+}
+
+.headerButton {
+    color: rgb(27, 27, 27);
+    vertical-align: middle;
+    height: 100%;
+    background:none;
+    font-size: 20px;
+    border: 2px solid antiquewhite;
+    font-family: 'Montserrat', sans-serif;
+    flex-shrink: unset;
+    transition: border-color 1s linear;
+}
+
+.headerButton:hover   {
+    border-width: 2px;
+    border-color: rgb(27, 27, 27);
+    border-style: solid;
+    cursor: pointer;
+    transition: border-color 1s linear;
+}
+
+#logoCont > a > button  {
+    width: 300px;
+    text-align: left;
+}
+
+#headerButtonCont   {
+    float: right;
+}

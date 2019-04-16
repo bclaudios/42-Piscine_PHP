@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ex01</title>
+	<style>
+	html, body {
+		background-color: black;
+		text-align:center;
+	}
+	main	{
+		margin-top: 40%;
+	}
+	</style>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+</head>
+<body>
+	<main>
+		<input type="text" id="left">
+		<select id="op">
+			<option value="+">+</option>
+			<option value="-">-</option>
+			<option value="*">*</option>
+			<option value="/">/</option>
+			<option value="%">%</option>
+		</select>
+		<input type="text" id="right">
+		<input type="submit" value="Try me!" id="submit">
+	</main>
+	<script>
+	window.setInterval(function(){
+		alert("Please, use me...");
+	}, 30000);
+	$("#submit").click( function()	{
+		var regex = /^[+]{0,1}\d*$/;
+		var operation = { "+" : Plus, "-" : Minus, "*" : Mult, "/" : Divide, "%" : Mod};
+		function Plus(left, right)	{
+			return (left + right);
+		}
+		function Minus(left, right)	{
+			return (left - right);
+		}
+		function Mult(left, right)	{
+			return (left * right);
+		}
+		function Divide(left, right)	{
+			return (left / right);
+		}
+		function Mod(left, right)	{
+			return (left % right);
+		}
+		var left = $("#left").val();
+		var right = $("#right").val();
+		var op = $("#op").val();
+		console.log(left, right, op);
+		if (!left  || !regex.test(left) || !right || !regex.test(right))	{
+			alert("Error :(");
+			return;
+		}
+		var right = parseInt(right, 10);
+		var left = parseInt(left, 10);
+		if (right === 0 && (op === "/" || op === "%"))	{
+			console.log("It's over 9000!");
+			alert("It's over 9000!");
+			return;
+		}
+		var result = operation[op](left, right);
+		console.log(result);
+		alert(result);
+	});
+	</script>
+</body>
+</html>

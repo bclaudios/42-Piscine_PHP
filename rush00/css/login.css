@@ -1,0 +1,126 @@
+.input  {
+    width: 100%;
+    border: none;
+    height: 40px;
+    border-radius: none;
+    border: 2px solid rgb(27, 27, 27);
+    background-color: white;
+    box-sizing: border-box;
+    color: rgb(27, 27, 27);
+    padding: 10px;
+    font-size: 20px;
+	font-family: 'Montserrat', sans-serif;
+	margin-bottom: 10px;
+}
+
+.submitButton    {
+    width: 50%;
+    border: 2px solid rgb(27, 27, 27);
+    height: 40px;
+	color: rgb(27, 27, 27);
+	margin-top: 20px;
+    margin-left: auto; 
+    margin-right: auto;
+	border-radius: 5px;
+	color: #ffffff;
+	font-size: 21px;
+	padding: 0;
+	text-decoration: none;  
+	background: #7dc8fa;
+	background-image: -webkit-linear-gradient(top, #7dc8fa, #2dbfcc);
+	background-image: -moz-linear-gradient(top, #7dc8fa, #2dbfcc);
+	background-image: -ms-linear-gradient(top, #7dc8fa, #2dbfcc);
+	background-image: -o-linear-gradient(top, #7dc8fa, #2dbfcc);
+	background-image: linear-gradient(to bottom, #7dc8fa, #2dbfcc);
+}
+
+.submitButton:hover  {
+	background: #3cb0fd;
+	background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+	background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+	background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+	background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+	background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+	text-decoration: none;
+}
+
+.infoCont	{
+	border: 2px solid rgb(27, 27, 27);
+	padding: 0 10px;
+}
+
+.checkCont	{
+	display: flex;
+}
+
+.productContainer	{
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.product {
+	border: 2px solid rgb(27, 27, 27);
+	text-align: center;
+	box-sizing: content-box;
+	background-color: #d7f8fa;
+	width: 300px;
+	margin-bottom: 30px;
+	display: flex;
+	flex-direction: column;
+	box-shadow: 5px 5px 5px rgb(27, 27, 27);
+}
+
+.product img 	{
+	border-bottom: 2px solid rgb(27, 27, 27);
+}
+.productInfo	{
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	padding: 10px;
+}
+
+.productInfo * {
+	flex:1;
+	width: 100%;;
+}
+
+.productInfo h3 {
+	font-size: 15px;
+}
+
+.quantity	{
+	border: none;
+	background: none;
+	text-align: center;
+}
+
+.price {
+	text-align: center;
+	flex: 0.15;
+	margin: 10px 0 0 0;
+}
+
+.format	{
+	text-align: center;
+	font-size: 17px;
+	padding: 0;
+}
+
+.buyButton	{
+	border: 2px solid rgb(27, 27, 27);
+	border-radius: 5px;
+	background: none;
+	padding: 3px;
+	background-color: #94aeaf;
+}
+
+.buyButton:hover{
+	background-color: #647677;
+}
+select	{
+	border: none;
+	background: none;
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+	<title>Balloon</title>
+	<style>
+		html, body{
+			height: 100%;
+			margin: 0;
+			padding: 0;
+			background-color: black;
+		}
+		main	{
+			text-align: center;
+		}
+		#balloon	{
+			height: 200px;
+			width: 200px;
+			background-color: red;
+			border-radius: 100%;
+			margin: 0 auto 0 auto;
+		}
+	</style>
+</head>
+<body>
+	<main>
+		<div id="balloon"></div>
+	</main>
+	<script>
+		var color = ["red", "green", "blue"];
+		var count = 10000;
+		$("#balloon").click( function()	{
+			$("#balloon").height("+=10");
+			$("#balloon").width("+=10");
+			if ($("#balloon").height() > 420)	{
+				$("#balloon").height("200");
+				$("#balloon").width("200");
+			}
+			count++;
+			UpdateColor();
+		});
+		
+		$("#balloon").mouseout( function()	{
+			if ($("#balloon").height() >= 205)	{
+				$("#balloon").height("-=5");
+				$("#balloon").width("-=5");
+			}
+			count--;
+			UpdateColor();
+		});
+
+		function UpdateColor()	{
+			var index = count % 3;
+			$("#balloon").css("background-color", color[index]);
+		}
+	</script>
+</body>
+</html>

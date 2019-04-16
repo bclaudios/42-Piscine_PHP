@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>B.A.BA</title>
+		<style>
+		html, body	{
+			background-color:pink;
+			margin: 0px;
+		}
+		.container	{
+			margin: 0 auto;
+			width:90%;
+		}
+		main {
+			height: 100%;
+		}
+		.row	{
+			display: flex;
+		}
+		.column	{
+			flex: 50%;
+			text-align: center;
+		}
+		h1	{
+			text-align: center;
+			color: white;
+			font-size: 40px;
+		}
+		.thumbnail {
+			width: 500px;
+			height: 200px;
+		}
+		.link	{
+			font-size: 24px;
+			margin: 10px 0px;
+		}
+		footer	{
+	    	height: 40px;
+			position: absolute;
+			bottom: 0;
+			margin: 0;
+			width: 100%;
+			border-style: solid;
+			border-width: 1px 0 0 0;
+		}
+		#copyright	{
+			text-align: right;
+			font-style: italic;
+			font-family: 'Andale Mono', monospace;
+			margin: 10px 0px;
+		}
+		</style>
+	</head>
+
+	<body>
+		<header>
+			<div class="container">
+				<h1>C'est du génie.</h1>
+			</div>
+		</header>
+		<main>
+			<div class="container">
+				<div class="row">
+					<div class="column">
+						<img class="thumbnail" src="https://www.woodbrass.com/images/v4/paged/partenaire_officiel/img_woodbrass_partenaire.jpg" alt="Woodbrass Logo" title="Woodbrass">
+						<p class="link"><a href="https://www.woodbrass.com/">Woodbrass</a></p>
+					</div>
+					<div class="column">
+						<img class="thumbnail" src="https://www.thomann.de/thumb/opengraphnb/pics/herstlogos/thomann.gif" 	alt="Thomann Logo" title="Thomann">
+						<p class="link"><a href="https://www.thomann.de/fr/index.html?gclid=EAIaIQobChMI24Hcx4rw4AIVAp7VCh0c8gncEAAYASAAEgLbqPD_BwE">Thomann</a></p>
+					</div>
+				</div>
+			</div>
+		</main>
+		<footer>
+			<div class="container">
+				<p id="copyright">&copy; bclaudio 2019</p>
+			</div>
+		</footer>
+	</body>
+</html>

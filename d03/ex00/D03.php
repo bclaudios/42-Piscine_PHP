@@ -1,0 +1,1 @@
+Le software PAMP n'etant plus telechargeable, je me vois dans l'obligation d'utiliser la commande php -s 'hostname':8080

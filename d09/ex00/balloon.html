@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Balloon</title>
+	<style>
+		html, body{
+			height: 100%;
+			margin: 0;
+			padding: 0;
+			background-color: black;
+		}
+		main	{
+			text-align: center;
+		}
+		#balloon	{
+			height: 200px;
+			width: 200px;
+			background-color: red;
+			border-radius: 100%;
+			margin: 0 auto 0 auto;
+		}
+	</style>
+	<script type="text/javascript">
+		var color = ["red", "green", "blue"];
+		var count = 10000;
+		function IncreaseSize()	{
+			var balloon = document.getElementById("balloon");
+			var newSize = balloon.offsetHeight + 10;
+			balloon.style.height = newSize + "px";
+			balloon.style.width = newSize + "px";
+			if (balloon.offsetHeight > 420)	{
+				balloon.style.height = 200 + "px";
+				balloon.style.width = 200 + "px";
+			}
+			count++;
+			UpdateColor();
+		}
+		
+		function DecreaseSize()	{
+			var balloon = document.getElementById("balloon");
+			if (balloon.offsetHeight >= 205)	{
+				var newSize = balloon.offsetHeight - 5;
+				balloon.style.height = newSize + "px";
+				balloon.style.width = newSize + "px";
+			}
+			count--;
+			UpdateColor();
+		}
+
+		function UpdateColor()	{
+			var balloon = document.getElementById("balloon");			
+			var index = count % 3;
+			balloon.style.backgroundColor = color[index];
+		}
+	</script>
+</head>
+<body>
+	<main>
+		<div id="balloon" onclick="IncreaseSize()" onmouseout="DecreaseSize()"></div>
+	</main>
+</body>
+</html>
